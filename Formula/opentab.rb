@@ -1,5 +1,5 @@
 class Opentab < Formula
-  include Language::Python::Shebang
+  include Language::Python::Virtualenv
 
   desc "Local OpenCode cost explorer / dashboard TUI"
   homepage "https://github.com/hamidi-dev/opentab"
@@ -10,10 +10,7 @@ class Opentab < Formula
   depends_on "python@3.12"
 
   def install
-    # opentab is a single self-contained, stdlib-only script; point its
-    # shebang at the keg's Python so `curses` is guaranteed to be present.
-    rewrite_shebang detected_python_shebang, "opentab"
-    bin.install "opentab"
+    virtualenv_install_with_resources
   end
 
   test do
