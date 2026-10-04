@@ -3,8 +3,8 @@ class Opentab < Formula
 
   desc "Local OpenCode cost explorer / dashboard TUI"
   homepage "https://github.com/hamidi-dev/opentab"
-  url "https://github.com/hamidi-dev/opentab/archive/refs/tags/v1.27.0.tar.gz"
-  sha256 "df1d4a0111d9534a30b5bd899fe92dbcd1083b73d1e0803d99b1a4c5ed59f4cd"
+  url "https://github.com/hamidi-dev/opentab/archive/refs/tags/v1.28.0.tar.gz"
+  sha256 "dc990e83a0886ee28dfe7f059c7704f75eb37a4bfad2831bc0878bc2f1414f49"
   license "MIT"
 
   depends_on "python@3.12"
